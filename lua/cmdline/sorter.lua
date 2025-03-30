@@ -24,7 +24,7 @@ return function(opts)
       end
 
       -- Prioritise commands over history
-      if entry.type == "command" then
+      if entry.type == "history" then
         return 1 / ((fzy_score + OFFSET) * 1.15)
       end
 
